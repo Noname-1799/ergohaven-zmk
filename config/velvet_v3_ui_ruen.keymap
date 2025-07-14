@@ -128,10 +128,10 @@
         sym_ru {
             display-name = "sym_ru";
             bindings = <
-&kp GRAVE           &en RU_EXCLAMATION  &en RU_RUBLE   &kp RU_NUMERO     &en DOLLAR   &en PRCNT                       &en CARET   &kp AMPERSAND  &kp RU_STAR   &en RU_UNDER  &kp RU_EQUAL     &trans
-&kp TILDE           &kp PLUS            &kp RU_LPAR    &kp RU_COLON      &kp RU_RPAR  &kp RU_COMMA                    &kp RU_DOT  &en LBRC       &kp RU_SEMI   &kp RBRC      &kp RU_DQT       &kp SINGLE_QUOTE
-&kp RU_CYRILLIC_IO  &kp NUBS            &kp STAR       &kp RU_EQUAL      &kp RU_FSLH  &en RU_PLUS                     &en AT      &en PIPE       &en RU_MINUS  &en AMPS      &kp RU_QUESTION  &trans
-                                        &kp LESS_THAN  &kp GREATER_THAN  &trans       &mo 5         &trans    &trans  &trans      &trans         &en LBKT      &en RBKT
+&kp GRAVE           &en RU_EXCLAMATION  &en RU_RUBLE   &kp RU_NUMERO     &en DOLLAR    &en PRCNT                          &en CARET    &kp AMPERSAND  &kp RU_STAR   &en RU_UNDER  &kp RU_EQUAL     &trans
+&kp TILDE           &kp PLUS            &kp RU_LPAR    &kp RU_COLON      &kp RU_RPAR   &kp RU_QUESTION                    &kp RU_FSLH  &en LBRC       &kp RU_SEMI   &kp RBRC      &kp RU_DQT       &kp SINGLE_QUOTE
+&kp RU_CYRILLIC_IO  &kp NUBS            &kp STAR       &kp RU_EQUAL      &kp RU_COMMA  &en RU_PLUS                        &en AT       &en RU_DOT     &en RU_MINUS  &en AMPS      &kp RU_QUESTION  &trans
+                                        &kp LESS_THAN  &kp GREATER_THAN  &trans        &mo 5            &trans    &trans  &trans       &trans         &en LBKT      &en RBKT
             >;
         };
 
