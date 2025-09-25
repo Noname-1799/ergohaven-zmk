@@ -21,21 +21,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        cmben {
-            bindings = <&layer_en>;
-            key-positions = <3 4>;
-            layers = <1>;
-        };
-
-        cmbru {
-            bindings = <&layer_ru>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_ru: to_ru {
@@ -105,10 +91,10 @@
 
         nav {
             bindings = <
-&trans          &kp N1      &kp N2            &kp N3            &kp N4            &kp N5                              &kp N6      &kp N7          &kp N8         &kp N9           &kp N0         &kp DEL
-&kp LCTRL       &trans      &kp HOME          &trans            &kp END           &kp RET                             &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &en MINUS      &en EQUAL
-&kp LEFT_SHIFT  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(N6)  &kp LG(N7)      &kp PAGE_DOWN  &kp PAGE_UP      &kp LC(RIGHT)  &kp LEFT_SHIFT
-                            &kp CAPSLOCK      &kp INSERT        &trans            &trans            &trans    &trans  &mo 5       &trans          &kp LBKT       &kp RBKT
+&trans          &kp N1      &kp N2            &kp N3            &kp N4            &kp N5                              &kp N6      &kp N7          &kp N8                  &kp N9                   &kp N0         &trans
+&kp LCTRL       &kp INSERT  &kp HOME          &trans            &kp END           &trans                              &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW            &kp RIGHT_ARROW          &kp DELETE     &trans
+&kp LEFT_SHIFT  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                    &kp LG(N6)  &kp LG(N7)      &kp PAGE_DOWN           &kp PAGE_UP              &kp LC(RIGHT)  &trans
+                            &kp CAPSLOCK      &trans            &trans            &trans            &trans    &trans  &mo 5       &trans          &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))
             >;
 
             display-name = "nav";
@@ -116,10 +102,10 @@
 
         sym {
             bindings = <
-&kp GRAVE       &kp EXCL  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PRCNT                    &kp CARET  &kp AMPERSAND  &kp STAR   &kp UNDER  &kp EQUAL  &trans
-&kp LCTRL       &kp PLUS  &kp LPAR     &kp COLON  &kp RPAR    &kp COMMA                    &kp DOT    &kp LBRC       &kp SEMI   &kp RBRC   &kp DQT    &kp SQT
-&kp LEFT_SHIFT  &kp NUBS  &kp STAR     &kp EQUAL  &kp FSLH    &kp PLUS                     &kp AT     &kp PIPE       &kp MINUS  &kp AMPS   &kp QMARK  &trans
-                          &kp LT       &kp GT     &trans      &mo 5      &trans    &trans  &trans     &trans         &kp LBKT   &kp RBKT
+&kp GRAVE       &kp EXCL  &kp AT_SIGN    &kp HASH   &kp DOLLAR  &kp PRCNT                    &kp CARET      &kp AMPERSAND  &kp STAR                &kp UNDER                &kp EQUAL  &trans
+&kp LCTRL       &trans    &kp LPAR       &kp COLON  &kp RPAR    &kp EQUAL                    &kp BACKSLASH  &kp LBRC       &kp SEMI                &kp RBRC                 &trans     &trans
+&kp LEFT_SHIFT  &trans    &kp BACKSLASH  &kp EQUAL  &kp FSLH    &kp PLUS                     &kp AT         &kp PIPE       &kp MINUS               &kp AMPS                 &kp QMARK  &trans
+                          &kp LT         &kp GT     &trans      &mo 5      &trans    &trans  &trans         &trans         &kp LC(LG(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))
             >;
 
             display-name = "sym";
@@ -131,7 +117,7 @@
 &kp GRAVE       &kp RU_EXCLAMATION  &kp RU_RUBLE   &kp RU_NUMERO     &kp DOLLAR   &kp PRCNT                          &kp CARET   &kp AMPERSAND  &kp RU_STAR   &kp RU_UNDER  &kp RU_EQUAL     &trans
 &kp LCTRL       &kp PLUS            &kp RU_LPAR    &kp RU_COLON      &kp RU_RPAR  &kp RU_COMMA                       &kp RU_DOT  &en LBRC       &kp RU_SEMI   &kp RBRC      &kp RU_DQT       &kp SINGLE_QUOTE
 &kp LEFT_SHIFT  &kp NUBS            &kp STAR       &kp RU_EQUAL      &kp RU_FSLH  &kp RU_PLUS                        &en AT      &kp PIPE       &en RU_MINUS  &en AMPS      &kp RU_QUESTION  &trans
-                                    &kp LESS_THAN  &kp GREATER_THAN  &en DOT      &mo 5         &en COMMA    &trans  &trans      &trans         &en LBKT      &kp RBKT
+                                    &kp LESS_THAN  &kp GREATER_THAN  &en DOT      &mo 5         &en COMMA    &trans  &trans      &trans         &trans        &trans
             >;
         };
 
